@@ -38,7 +38,7 @@ h1 {
     padding: 15px;
     opacity: 0.7;
     background-color: var(--first-color);
-    color: var(--third-color);
+    color: var(--second-color);
 }
 
 h2 {
