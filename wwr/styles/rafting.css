@@ -25,6 +25,19 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-content: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -90,4 +103,23 @@ footer {
     float: right;
     width: 150px;
     height: auto;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 15px;
+    color: var(--first-color);
+}
+
+.navigation a:hover {
+    text-decoration: underline;
 }
