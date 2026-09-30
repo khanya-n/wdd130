@@ -74,6 +74,54 @@ figure img {
     height: auto;
 }
 
+form {
+    padding: 0 10px 10px 0;
+    margin: 1rem;
+}
+
+label {
+    padding: 10px 5px;
+    margin: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+fieldset,
+button[type="submit"] {
+    width: 460px;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+fieldset label {
+    font-size: smaller;
+}
+
+button[type="submit"] {
+    background-color: var(--fourth-color);
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--first-color);
+}
+
 footer {
     border-top: 1px solid var(--first-color);
 }
@@ -139,7 +187,8 @@ footer p {
     text-decoration: underline;
 }
 
-.history {
+.history,
+.contact-info {
     display: flex;
     align-items: center;
 }
@@ -151,13 +200,51 @@ footer p {
     height: auto;
 }
 
-.adventure {
+.adventure,
+.employees {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.adventure figure {
+.adventure figure,
+.employees figure {
     padding-top: 10px;
     flex: auto;
+}
+
+.page-heading {
+    opacity: 1;
+    position: initial;
+}
+
+.contact-info {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+.map {
+    float: left;
+    margin: 1rem;
+}
+
+.map iframe {
+    width: 320px;
+    height: 420px;
+}
+
+.employees h2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--first-color);
+}
+
+.employees {
+    background-color: var(--third-color);
 }
