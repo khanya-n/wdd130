@@ -1,0 +1,80 @@
+:root {
+    --primary-colour: darkgreen;
+    --background-grey: #eaeae8;
+    --soft-gray: lightslategrey;
+    --text-colour: darkslategrey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-left: 1em;
+    color: var(--primary-colour);
+}
+
+form {
+    background-color: var(--background-grey);
+    border: 1px solid var(--soft-gray);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-colour);
+}
+
+code {
+    background-color: var(--text-colour);
+    color: white;
+    display: block;
+    font-family: monospace;
+    padding: 1em;
+    margin: 1em 8em;
+    max-width: 400px;
+}
+
+.question-number {
+    font-size: 1.2rem;
+    color: var(--primary-colour);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 660px;
+    padding: 1rem;
+    border: var(--soft-gray);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 660px;
+    background-color: var(--primary-colour);
+    color: white;
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
