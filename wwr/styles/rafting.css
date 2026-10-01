@@ -200,8 +200,7 @@ footer p {
     height: auto;
 }
 
-.adventure,
-.employees {
+.adventure {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -243,8 +242,23 @@ footer p {
 .employees h2 {
     background-color: rgba(0, 0, 0, 0);
     color: var(--first-color);
+    grid-column: 1 / -1;
 }
 
 .employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: var(--third-color);
+    border: 1px solid var(--second-color);
+    padding: 1rem;
+    margin: 5px;
+}
+
+.employees figure figcaption {
+    font-size: smaller;
+}
+
+.employees figure img {
+    width: 260px;
+    height: auto;
 }
