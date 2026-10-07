@@ -35,11 +35,11 @@ header {
 
 header img {
     width: 150px;
-    height: auto;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--heading-font);
     text-align: center;
 }
@@ -61,6 +61,10 @@ h2 {
     padding: 15px;
 }
 
+h3 {
+    color: var(--fourth-color);
+}
+
 nav,
 p,
 section,
@@ -69,9 +73,12 @@ article {
     padding: 10px;
 }
 
+img {
+    height: auto;
+}
+
 figure img {
     width: 150px;
-    height: auto;
 }
 
 form {
@@ -130,7 +137,8 @@ footer {
     justify-content: space-around;
 }
 
-footer p {
+footer p,
+.offerings p {
     text-align: center;
 }
 
@@ -162,14 +170,12 @@ footer p {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
     opacity: 1;
 }
 
 .hero article img {
     float: right;
     width: 150px;
-    height: auto;
 }
 
 .navigation {
@@ -201,7 +207,6 @@ footer p {
     flex: auto;
     padding: 10px;
     width: 150px;
-    height: auto;
 }
 
 .adventure {
@@ -264,5 +269,47 @@ footer p {
 
 .employees figure img {
     width: 260px;
-    height: auto;
+}
+
+.newsletter-form {
+    padding: 15px;
+    background-color: var(--third-color);
+}
+
+.newsletter-form form {
+    margin: 10px auto;
+    width: 500px;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"],
+.newsletter-form button[type="submit"] {
+    display: block;
+    margin: 10px;
+}
+
+.offerings {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    margin: 10px 0;
+}
+
+.offerings img {
+    width: 200px;
+    height: 130px;
+}
+
+.offerings p {
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+.link {
+    background-color: var(--fourth-color);
+    color: white;
+    text-align: center;
+}
+
+.link a {
+    color: var(--third-color);
 }
