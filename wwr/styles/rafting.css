@@ -313,3 +313,8 @@ footer p,
 .link a {
     color: var(--third-color);
 }
+
+.trips-heading {
+    opacity: 1;
+    position: initial;
+}
