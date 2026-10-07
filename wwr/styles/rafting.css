@@ -124,6 +124,10 @@ button[type="submit"]:hover {
 
 footer {
     border-top: 1px solid var(--first-color);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
 }
 
 footer p {
