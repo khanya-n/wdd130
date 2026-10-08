@@ -266,9 +266,13 @@ footer p,
 }
 
 .employees h2 {
+    grid-column: 1 / -1;
+}
+
+.employees h2,
+.subheading {
     background-color: rgba(0, 0, 0, 0);
     color: var(--first-color);
-    grid-column: 1 / -1;
 }
 
 .employees {
