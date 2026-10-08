@@ -129,6 +129,23 @@ button[type="submit"]:hover {
     background-color: var(--first-color);
 }
 
+table {
+    border: 2px solid var(--first-color);
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+thead tr {
+    background-color: var(--third-color);
+    font-weight: bolder;
+}
+
+th,
+td {
+    border: 1px solid var(--first-color);
+    padding: 1rem;
+}
+
 footer {
     border-top: 1px solid var(--first-color);
     padding: 10px;
@@ -308,6 +325,7 @@ footer p,
     background-color: var(--fourth-color);
     color: white;
     text-align: center;
+    font-size: larger;
 }
 
 .link a {
@@ -317,4 +335,20 @@ footer p,
 .trips-heading {
     opacity: 1;
     position: initial;
+}
+
+.trip {
+    margin: 5px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+.trip img {
+    width: 200px;
+}
+
+.row-heading {
+    font-weight: bold;
 }
